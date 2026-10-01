@@ -1,4 +1,4 @@
-# AMPTemplates
+# AMPTemplate
 
 Eigene Vorlagen (Generic Module) für [CubeCoders AMP](https://cubecoders.com/AMP).
 
@@ -8,7 +8,7 @@ Eigene Vorlagen (Generic Module) für [CubeCoders AMP](https://cubecoders.com/AM
 
 ## In AMP einbinden
 
-*Configuration → Instance Deployment → Configuration Repository* → `Daywalker91/AMPTemplates:main`
+*Configuration → Instance Deployment → Configuration Repository* → `Daywalker91/AMPTemplate:main`
 hinzufügen → *Fetch latest*. Danach stehen die Vorlagen beim Anlegen einer Instanz zur Auswahl.
 
 ## Aufbau einer Vorlage
