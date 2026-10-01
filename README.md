@@ -9,7 +9,7 @@ Eigene Vorlagen (Generic Module) für [CubeCoders AMP](https://cubecoders.com/AM
 ## In AMP einbinden
 
 *Configuration → Instance Deployment → Configuration Repository* → `Daywalker91/AMPTemplate:main`
-hinzufügen → *Fetch latest*. Danach stehen die Vorlagen beim Anlegen einer Instanz zur Auswahl.
+hinzufügen → *Fetch Latest* → AMP (ADS) neu starten. Danach stehen die Vorlagen beim Anlegen einer Instanz zur Auswahl.
 
 ## Aufbau einer Vorlage
 
@@ -20,6 +20,10 @@ hinzufügen → *Fetch latest*. Danach stehen die Vorlagen beim Anlegen einer In
 | `<name>metaconfig.json` | welche Felder AMP in welche Datei schreibt (hier: die `.env` des Bots) |
 | `<name>updates.json` | Schritte beim *Update*: Code laden, venv, Abhängigkeiten |
 | `<name>ports.json` | Ports der Instanz |
+
+Zusätzlich braucht das Repo eine `manifest.json` mit `"repotype": "AppTemplates"` – daran
+erkennt AMP es als Vorlagen-Sammlung. Neue oder geänderte Vorlagen erscheinen nach
+*Fetch Latest* erst nach einem **Neustart von AMP** (ADS) in der Liste.
 
 Bearbeiten geht direkt hier oder bequem im
 [Generic Config Generator](https://iceofwraith.github.io/GenericConfigGen/) (Import → ändern → Export).
