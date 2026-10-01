@@ -1,0 +1,19 @@
+# Betriebssystem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editoren
+.vscode/
+.idea/
+*.swp
+
+# Backups und Exporte (z.B. aus dem Generic Config Generator)
+*.bak
+*.orig
+*.zip
+export/
+
+# Niemals Zugangsdaten einchecken - die gehoeren in die AMP-Einstellungen
+.env
+*.env
