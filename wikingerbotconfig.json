@@ -1,0 +1,161 @@
+[
+    {
+        "DisplayName": "Python Version",
+        "Category": "WikingerBot:smart_toy",
+        "Subcategory": "Bot:settings:1",
+        "Description": "Python-Version fuer den Bot (mindestens 3.11). Die Version muss auf dem System fuer alle Benutzer installiert sein (unter Windows im System-PATH). Im Docker-Modus von AMP gilt die Version des Images. Nach einer Aenderung die Instanz aktualisieren.",
+        "Keywords": "python,version,PythonVersion",
+        "FieldName": "PythonVersion",
+        "InputType": "enum",
+        "ParamFieldName": "PythonVersion",
+        "DefaultValue": "3",
+        "EnumValues": {
+            "3": "Systemstandard",
+            "3.11": "3.11",
+            "3.12": "3.12",
+            "3.13": "3.13"
+        }
+    },
+    {
+        "DisplayName": "Discord Bot Token",
+        "Category": "WikingerBot:smart_toy",
+        "Subcategory": "Bot:settings:1",
+        "Description": "Token des Bots aus dem [Discord Developer Portal](https://discord.com/developers/applications/) (Bot -> Reset Token).",
+        "Keywords": "discord,token",
+        "FieldName": "DISCORD_TOKEN",
+        "InputType": "Password",
+        "ParamFieldName": "DISCORD_TOKEN",
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Log-Level",
+        "Category": "WikingerBot:smart_toy",
+        "Subcategory": "Bot:settings:1",
+        "Description": "Wie ausfuehrlich der Bot in die Konsole schreibt. DEBUG nur zur Fehlersuche.",
+        "Keywords": "log,level,debug",
+        "FieldName": "LOG_LEVEL",
+        "InputType": "enum",
+        "ParamFieldName": "LOG_LEVEL",
+        "DefaultValue": "INFO",
+        "EnumValues": {
+            "INFO": "Normal (INFO)",
+            "DEBUG": "Ausfuehrlich (DEBUG)",
+            "WARNING": "Nur Warnungen (WARNING)"
+        }
+    },
+    {
+        "DisplayName": "Datenbank-Migrationen beim Start",
+        "Category": "WikingerBot:smart_toy",
+        "Subcategory": "Bot:settings:1",
+        "Description": "Bringt die Datenbank bei jedem Start automatisch auf den neuesten Stand (alembic upgrade head). Nur zur Fehlersuche abschalten.",
+        "Keywords": "datenbank,migration,alembic",
+        "FieldName": "AUTO_MIGRATE",
+        "InputType": "checkbox",
+        "ParamFieldName": "AUTO_MIGRATE",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Datenbank-Host",
+        "Category": "WikingerBot:smart_toy",
+        "Subcategory": "Datenbank:storage:2",
+        "Description": "IP oder Name des MariaDB-Servers.",
+        "Keywords": "datenbank,mariadb,host",
+        "FieldName": "DB_HOST",
+        "InputType": "text",
+        "ParamFieldName": "DB_HOST",
+        "DefaultValue": "",
+        "Placeholder": "10.0.0.107",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Datenbank-Port",
+        "Category": "WikingerBot:smart_toy",
+        "Subcategory": "Datenbank:storage:2",
+        "Description": "Port des MariaDB-Servers.",
+        "Keywords": "datenbank,mariadb,port",
+        "FieldName": "DB_PORT",
+        "InputType": "number",
+        "ParamFieldName": "DB_PORT",
+        "DefaultValue": "3306",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Datenbank-Name",
+        "Category": "WikingerBot:smart_toy",
+        "Subcategory": "Datenbank:storage:2",
+        "Description": "Name der Datenbank des Bots.",
+        "Keywords": "datenbank,mariadb,name",
+        "FieldName": "DB_NAME",
+        "InputType": "text",
+        "ParamFieldName": "DB_NAME",
+        "DefaultValue": "wikingerbot",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Datenbank-Benutzer",
+        "Category": "WikingerBot:smart_toy",
+        "Subcategory": "Datenbank:storage:2",
+        "Description": "MariaDB-Benutzer des Bots.",
+        "Keywords": "datenbank,mariadb,benutzer,user",
+        "FieldName": "DB_USER",
+        "InputType": "text",
+        "ParamFieldName": "DB_USER",
+        "DefaultValue": "wikingerbot",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Datenbank-Passwort",
+        "Category": "WikingerBot:smart_toy",
+        "Subcategory": "Datenbank:storage:2",
+        "Description": "Passwort des MariaDB-Benutzers. Sonderzeichen sind erlaubt, sie werden automatisch korrekt kodiert. Einzige Ausnahme: ein einfaches Anfuehrungszeichen (').",
+        "Keywords": "datenbank,mariadb,passwort,password",
+        "FieldName": "DB_PASSWORD",
+        "InputType": "Password",
+        "ParamFieldName": "DB_PASSWORD",
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "AMP URL",
+        "Category": "WikingerBot:smart_toy",
+        "Subcategory": "AMP:dns:3",
+        "Description": "Adresse des AMP-Controllers (ADS), den der Bot steuert. Laeuft die Instanz im Docker-Modus, NICHT 127.0.0.1 verwenden, sondern die IP des AMP-Servers.",
+        "Keywords": "amp,url",
+        "FieldName": "AMP_URL",
+        "InputType": "text",
+        "ParamFieldName": "AMP_URL",
+        "DefaultValue": "http://127.0.0.1:8080",
+        "Placeholder": "http://127.0.0.1:8080",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "AMP Benutzer",
+        "Category": "WikingerBot:smart_toy",
+        "Subcategory": "AMP:dns:3",
+        "Description": "Eigener AMP-Benutzer fuer den Bot (nicht dein persoenlicher). Braucht Rechte zum Starten/Stoppen der Instanzen und fuer die Konsole.",
+        "Keywords": "amp,user,benutzer",
+        "FieldName": "AMP_USER",
+        "InputType": "text",
+        "ParamFieldName": "AMP_USER",
+        "DefaultValue": "",
+        "Placeholder": "wikingerbot",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "AMP Passwort",
+        "Category": "WikingerBot:smart_toy",
+        "Subcategory": "AMP:dns:3",
+        "Description": "Passwort des AMP-Benutzers des Bots.",
+        "Keywords": "amp,password,passwort",
+        "FieldName": "AMP_PASSWORD",
+        "InputType": "Password",
+        "ParamFieldName": "AMP_PASSWORD",
+        "DefaultValue": "",
+        "EnumValues": {}
+    }
+]

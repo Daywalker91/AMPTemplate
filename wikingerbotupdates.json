@@ -1,0 +1,60 @@
+[
+    {
+        "UpdateStageName": "Alten Code entfernen",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"cd \\\"{{$FullBaseDir}}\\\" && rm -rf Wikingerbot-main/bot Wikingerbot-main/api Wikingerbot-main/db Wikingerbot-main/web Wikingerbot-main/tests\"",
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Alten Code entfernen",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "cmd.exe",
+        "UpdateSourceArgs": "/C cd /D \"{{$FullBaseDir}}\" && for %d in (bot api db web tests) do @if exist \"Wikingerbot-main\\%d\" rmdir /S /Q \"Wikingerbot-main\\%d\"",
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Bot herunterladen",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://github.com/Daywalker91/Wikingerbot/archive/refs/heads/main.zip",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": true,
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Python-Umgebung anlegen",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"/usr/bin/python{{PythonVersion}} -m venv --clear --upgrade-deps \\\"{{$FullBaseDir}}venv\\\"\"",
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Python-Umgebung anlegen",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "cmd.exe",
+        "UpdateSourceArgs": "/C py -{{PythonVersion}} -m venv --clear --upgrade-deps \"{{$FullBaseDir}}venv\"",
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Abhaengigkeiten installieren",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"source \\\"{{$FullBaseDir}}venv/bin/activate\\\" && python3 -m pip install -U setuptools wheel && python3 -m pip install -r \\\"{{$FullBaseDir}}Wikingerbot-main/requirements.txt\\\"\"",
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Abhaengigkeiten installieren",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "cmd.exe",
+        "UpdateSourceArgs": "/C \"{{$FullBaseDir}}venv\\Scripts\\activate.bat\" && python.exe -m pip install -U setuptools wheel && python.exe -m pip install -r \"{{$FullBaseDir}}Wikingerbot-main\\requirements.txt\"",
+        "SkipOnFailure": false
+    }
+]

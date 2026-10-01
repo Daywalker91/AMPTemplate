@@ -1,0 +1,27 @@
+[
+    {
+        "ConfigFile": "Wikingerbot-main/.env",
+        "AutoMap": false,
+        "ConfigType": "kvp",
+        "ConfigFormat": "{0}='{1}'",
+        "ConfigFormatRegex": "^(?<key>[A-Z_]+)='(?<value>.*)'$",
+        "Subsections": [
+            {
+                "Heading": "$root",
+                "SettingMappings": {
+                    "DISCORD_TOKEN": "DISCORD_TOKEN",
+                    "LOG_LEVEL": "LOG_LEVEL",
+                    "AUTO_MIGRATE": "AUTO_MIGRATE",
+                    "DB_HOST": "DB_HOST",
+                    "DB_PORT": "DB_PORT",
+                    "DB_NAME": "DB_NAME",
+                    "DB_USER": "DB_USER",
+                    "DB_PASSWORD": "DB_PASSWORD",
+                    "AMP_URL": "AMP_URL",
+                    "AMP_USER": "AMP_USER",
+                    "AMP_PASSWORD": "AMP_PASSWORD"
+                }
+            }
+        ]
+    }
+]
