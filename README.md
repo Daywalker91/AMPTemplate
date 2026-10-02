@@ -30,3 +30,10 @@ Bearbeiten geht direkt hier oder bequem im
 
 Vorbild: die offizielle GatekeeperV2-Vorlage in
 [CubeCoders/AMPTemplates](https://github.com/CubeCoders/AMPTemplates).
+
+## Vorlage ändern
+
+Bei jeder Änderung an Feldern oder Einstellungen `Meta.ConfigVersion` in der `.kvp`
+hochzählen (und `Meta.ReleaseNotes` kurz füllen) – sonst übernimmt AMP die Änderung nicht
+in bestehende Instanzen. Danach in ADS: *Fetch Latest* → bei der Instanz
+*Refresh Configuration* (oder ADS neu starten).
