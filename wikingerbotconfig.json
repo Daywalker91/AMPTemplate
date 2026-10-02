@@ -253,5 +253,18 @@
         "ParamFieldName": "DISCORD_CLIENT_SECRET",
         "DefaultValue": "",
         "EnumValues": {}
+    },
+    {
+        "DisplayName": "Vertrauenswuerdige Proxys (optional)",
+        "Category": "WikingerBot:smart_toy",
+        "Subcategory": "Web-Oberflaeche:language:4",
+        "Description": "Nur bei einem Reverse-Proxy davor (z.B. Edge-Gateway mit https): IPs oder Netze, von denen der Proxy beim Bot ankommt, kommagetrennt, z.B. 10.0.0.35,10.0.0.36. Nur deren Weiterleitungs-Header (https, Besucher-IP) werden geglaubt. Leer: jedem.",
+        "Keywords": "web,proxy,gateway,trusted,https",
+        "FieldName": "TRUSTED_PROXIES",
+        "InputType": "text",
+        "ParamFieldName": "TRUSTED_PROXIES",
+        "DefaultValue": "",
+        "Placeholder": "10.0.0.35,10.0.0.36",
+        "EnumValues": {}
     }
 ]
