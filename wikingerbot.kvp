@@ -1,5 +1,5 @@
 Meta.DisplayName=WikingerBot
-Meta.Description=Discord-Bot fuer Gaming-Communities: AMP-Server steuern, Status-Banner, Moderation, Musik, Statistik, Web-Oberflaeche - optional an eine Community-Seite gekoppelt. https://github.com/Daywalker91/Wikingerbot
+Meta.Description=Discord-Bot fuer Gaming-Communities: AMP-Server steuern, Status-Banner, Moderation, Musik, Statistik, Web-Oberflaeche - optional an eine Community-Seite gekoppelt. https://github.com/Daywalker91/Wikingerbot Logo: designed by pikisuperstar - Magnific.com
 Meta.OS=Windows, Linux
 Meta.AarchSupport=Native
 Meta.Arch=All
@@ -21,8 +21,8 @@ Meta.Prerequisites=[]
 Meta.ExtraContainerPackages=[]
 Meta.ConfigReleaseState=NotSpecified
 Meta.NoCommercialUsage=False
-Meta.ConfigVersion=9
-Meta.ReleaseNotes=Beschreibungen und Beispiele allgemein formuliert
+Meta.ConfigVersion=10
+Meta.ReleaseNotes=Bildnachweis fuer das Logo
 Meta.BreakingReleaseNotes=
 Meta.AppConfigId=a7385895-d41b-4d9a-927c-13fcf2bc1ce9
 App.DisplayName=WikingerBot

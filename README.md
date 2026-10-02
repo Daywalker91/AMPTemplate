@@ -37,3 +37,7 @@ Bei jeder Änderung an Feldern oder Einstellungen `Meta.ConfigVersion` in der `.
 hochzählen (und `Meta.ReleaseNotes` kurz füllen) – sonst übernimmt AMP die Änderung nicht
 in bestehende Instanzen. Danach in ADS: *Fetch Latest* → bei der Instanz
 *Refresh Configuration* (oder ADS neu starten).
+
+## Bildnachweis
+
+Logo der WikingerBot-Vorlage: designed by [pikisuperstar - Magnific.com](https://www.magnific.com) (freie Lizenz mit Nennungspflicht). Das Bild wird nur verlinkt, nicht in diesem Repo verteilt.
