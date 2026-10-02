@@ -157,5 +157,48 @@
         "ParamFieldName": "AMP_PASSWORD",
         "DefaultValue": "",
         "EnumValues": {}
+    },
+    {
+        "DisplayName": "Eigene AMP-Rolle einrichten",
+        "Category": "WikingerBot:smart_toy",
+        "Subcategory": "AMP:dns:3",
+        "Description": "Der Bot legt beim Start seine eigene AMP-Rolle 'WikingerBot' mit nur den noetigen Rechten an und nimmt sich hinein. Dafuer braucht der AMP-Benutzer des Bots einmalig 'Super Admins'.",
+        "Keywords": "amp,rolle,role,rechte",
+        "FieldName": "AMP_MANAGE_ROLE",
+        "InputType": "checkbox",
+        "ParamFieldName": "AMP_MANAGE_ROLE",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Super Admin behalten",
+        "Category": "WikingerBot:smart_toy",
+        "Subcategory": "AMP:dns:3",
+        "Description": "Normalerweise gibt der Bot 'Super Admins' ab, sobald seine eigene Rolle eingerichtet ist. Nur einschalten, wenn er dauerhaft alle Rechte behalten soll (nicht empfohlen).",
+        "Keywords": "amp,super,admin",
+        "FieldName": "AMP_KEEP_SUPER_ADMIN",
+        "InputType": "checkbox",
+        "ParamFieldName": "AMP_KEEP_SUPER_ADMIN",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Eigene Instanz (nur Docker-Modus)",
+        "Category": "WikingerBot:smart_toy",
+        "Subcategory": "AMP:dns:3",
+        "Description": "Der Bot blendet seine eigene AMP-Instanz aus (damit er sich nicht selbst stoppen kann) und erkennt sie normalerweise automatisch. Nur wenn die Instanz im Docker-Modus laeuft und der Bot sich trotzdem in /server discover sieht: hier den Instanznamen eintragen, z.B. WikingerBot01.",
+        "Keywords": "amp,instanz,instance,docker",
+        "FieldName": "AMP_OWN_INSTANCE",
+        "InputType": "text",
+        "ParamFieldName": "AMP_OWN_INSTANCE",
+        "DefaultValue": "",
+        "Placeholder": "WikingerBot01",
+        "EnumValues": {}
     }
 ]

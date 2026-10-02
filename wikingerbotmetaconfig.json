@@ -19,7 +19,10 @@
                     "DB_PASSWORD": "DB_PASSWORD",
                     "AMP_URL": "AMP_URL",
                     "AMP_USER": "AMP_USER",
-                    "AMP_PASSWORD": "AMP_PASSWORD"
+                    "AMP_PASSWORD": "AMP_PASSWORD",
+                    "AMP_MANAGE_ROLE": "AMP_MANAGE_ROLE",
+                    "AMP_KEEP_SUPER_ADMIN": "AMP_KEEP_SUPER_ADMIN",
+                    "AMP_OWN_INSTANCE": "AMP_OWN_INSTANCE"
                 }
             }
         ]
