@@ -266,31 +266,5 @@
         "DefaultValue": "",
         "Placeholder": "10.0.0.35,10.0.0.36",
         "EnumValues": {}
-    },
-    {
-        "DisplayName": "Datenbank der Community-Seite (optional)",
-        "Category": "WikingerBot:smart_toy",
-        "Subcategory": "Community-Seite:forum:5",
-        "Description": "Name der Datenbank der Community-Seite auf demselben MariaDB-Server, z.B. php. Verbunden wird mit Host, Benutzer und Passwort aus dem Abschnitt Datenbank; der Benutzer braucht dort eigene, eng begrenzte Rechte. Leer = keine Anbindung, der Bot laeuft allein.",
-        "Keywords": "community,seite,website,datenbank",
-        "FieldName": "COMMUNITY_DB_NAME",
-        "InputType": "text",
-        "ParamFieldName": "COMMUNITY_DB_NAME",
-        "DefaultValue": "",
-        "Placeholder": "php",
-        "EnumValues": {}
-    },
-    {
-        "DisplayName": "Adresse der Community-Seite",
-        "Category": "WikingerBot:smart_toy",
-        "Subcategory": "Community-Seite:forum:5",
-        "Description": "Oeffentliche Adresse der Seite fuer Links in Discord (Profile, News, Events), z.B. https://wikinger.ipv64.net.",
-        "Keywords": "community,seite,website,url",
-        "FieldName": "COMMUNITY_SITE_URL",
-        "InputType": "text",
-        "ParamFieldName": "COMMUNITY_SITE_URL",
-        "DefaultValue": "",
-        "Placeholder": "https://wikinger.ipv64.net",
-        "EnumValues": {}
     }
 ]
