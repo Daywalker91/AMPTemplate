@@ -4,7 +4,7 @@ Eigene Vorlagen (Generic Module) für [CubeCoders AMP](https://cubecoders.com/AM
 
 | Vorlage | Dateien | Beschreibung |
 |---|---|---|
-| **WikingerBot** | `wikingerbot*` | Discord-Bot der Wikinger-Community – [Anleitung](https://github.com/Daywalker91/Wikingerbot/blob/main/AMP.md) |
+| **WikingerBot** | `wikingerbot*` | Discord-Bot für Gaming-Communities (AMP-Server, Moderation, Musik, optional Community-Seite) – [Anleitung](https://github.com/Daywalker91/Wikingerbot/blob/main/AMP.md) |
 
 ## In AMP einbinden
 

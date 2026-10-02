@@ -1,5 +1,5 @@
 Meta.DisplayName=WikingerBot
-Meta.Description=Discord-Bot der Wikinger-Community: AMP-Server steuern, Status-Banner, Moderation, Whitelist - https://github.com/Daywalker91/Wikingerbot
+Meta.Description=Discord-Bot fuer Gaming-Communities: AMP-Server steuern, Status-Banner, Moderation, Musik, Statistik, Web-Oberflaeche - optional an eine Community-Seite gekoppelt. https://github.com/Daywalker91/Wikingerbot
 Meta.OS=Windows, Linux
 Meta.AarchSupport=Native
 Meta.Arch=All
@@ -21,8 +21,8 @@ Meta.Prerequisites=[]
 Meta.ExtraContainerPackages=[]
 Meta.ConfigReleaseState=NotSpecified
 Meta.NoCommercialUsage=False
-Meta.ConfigVersion=8
-Meta.ReleaseNotes=Community-Seite wird jetzt in der Bot-Oberflaeche eingestellt (Felder entfernt)
+Meta.ConfigVersion=9
+Meta.ReleaseNotes=Beschreibungen und Beispiele allgemein formuliert
 Meta.BreakingReleaseNotes=
 Meta.AppConfigId=a7385895-d41b-4d9a-927c-13fcf2bc1ce9
 App.DisplayName=WikingerBot
