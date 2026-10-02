@@ -217,16 +217,16 @@
         }
     },
     {
-        "DisplayName": "Web-Adresse",
+        "DisplayName": "Web-Adresse (optional)",
         "Category": "WikingerBot:smart_toy",
         "Subcategory": "Web-Oberflaeche:language:4",
-        "Description": "Adresse, unter der der Browser den Bot erreicht, z.B. http://192.168.4.5:8765 (http genuegt). /bot web schickt diesen Link. Im Discord Developer Portal unter OAuth2 -> Redirects muss <Web-Adresse>/api/auth/callback eingetragen sein.",
+        "Description": "Nur noetig, wenn die Oberflaeche unter einem anderen Namen erreichbar ist, als AMP ihn kennt (z.B. eine Domain). Leer: /bot web nimmt die Adresse der Instanz aus AMP, der Login die Adresse, mit der die Seite aufgerufen wurde. Im Discord Developer Portal unter OAuth2 -> Redirects muss <Adresse>/api/auth/callback eingetragen sein.",
         "Keywords": "web,oberflaeche,webui,public_url",
         "FieldName": "PUBLIC_URL",
         "InputType": "text",
         "ParamFieldName": "PUBLIC_URL",
         "DefaultValue": "",
-        "Placeholder": "http://192.168.4.5:8765",
+        "Placeholder": "http://bot.example.org",
         "EnumValues": {}
     },
     {
