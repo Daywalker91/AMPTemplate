@@ -22,7 +22,11 @@
                     "AMP_PASSWORD": "AMP_PASSWORD",
                     "AMP_MANAGE_ROLE": "AMP_MANAGE_ROLE",
                     "AMP_KEEP_SUPER_ADMIN": "AMP_KEEP_SUPER_ADMIN",
-                    "AMP_OWN_INSTANCE": "AMP_OWN_INSTANCE"
+                    "AMP_OWN_INSTANCE": "AMP_OWN_INSTANCE",
+                    "WEB_ENABLED": "WEB_ENABLED",
+                    "PUBLIC_URL": "PUBLIC_URL",
+                    "DISCORD_CLIENT_ID": "DISCORD_CLIENT_ID",
+                    "DISCORD_CLIENT_SECRET": "DISCORD_CLIENT_SECRET"
                 }
             }
         ]

@@ -2,8 +2,8 @@
     {
         "Protocol": "TCP",
         "Port": 8765,
-        "Ref": "Port",
-        "Name": "Port",
-        "Description": "Platzhalter - der Bot selbst braucht keinen Port. Reserviert fuer die spaetere Web-Oberflaeche."
+        "Ref": "ApplicationPort1",
+        "Name": "Web-Oberflaeche",
+        "Description": "Port der Web-Oberflaeche des Bots (http)."
     }
 ]

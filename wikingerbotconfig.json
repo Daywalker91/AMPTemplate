@@ -200,5 +200,58 @@
         "DefaultValue": "",
         "Placeholder": "WikingerBot01",
         "EnumValues": {}
+    },
+    {
+        "DisplayName": "Web-Oberflaeche aktiv",
+        "Category": "WikingerBot:smart_toy",
+        "Subcategory": "Web-Oberflaeche:language:4",
+        "Description": "Startet die Web-Oberflaeche des Bots auf dem Port dieser Instanz.",
+        "Keywords": "web,oberflaeche,webui,web_enabled",
+        "FieldName": "WEB_ENABLED",
+        "InputType": "checkbox",
+        "ParamFieldName": "WEB_ENABLED",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Web-Adresse",
+        "Category": "WikingerBot:smart_toy",
+        "Subcategory": "Web-Oberflaeche:language:4",
+        "Description": "Adresse, unter der der Browser den Bot erreicht, z.B. http://192.168.4.5:8765 (http genuegt). /bot web schickt diesen Link. Im Discord Developer Portal unter OAuth2 -> Redirects muss <Web-Adresse>/api/auth/callback eingetragen sein.",
+        "Keywords": "web,oberflaeche,webui,public_url",
+        "FieldName": "PUBLIC_URL",
+        "InputType": "text",
+        "ParamFieldName": "PUBLIC_URL",
+        "DefaultValue": "",
+        "Placeholder": "http://192.168.4.5:8765",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Discord Client ID",
+        "Category": "WikingerBot:smart_toy",
+        "Subcategory": "Web-Oberflaeche:language:4",
+        "Description": "Aus dem Discord Developer Portal, Seite OAuth2 (fuer den Login in der Web-Oberflaeche).",
+        "Keywords": "web,oberflaeche,webui,discord_client_id",
+        "FieldName": "DISCORD_CLIENT_ID",
+        "InputType": "text",
+        "ParamFieldName": "DISCORD_CLIENT_ID",
+        "DefaultValue": "",
+        "Placeholder": "1523404561895784448",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Discord Client Secret",
+        "Category": "WikingerBot:smart_toy",
+        "Subcategory": "Web-Oberflaeche:language:4",
+        "Description": "Aus dem Discord Developer Portal, Seite OAuth2 -> Reset Secret.",
+        "Keywords": "web,oberflaeche,webui,discord_client_secret",
+        "FieldName": "DISCORD_CLIENT_SECRET",
+        "InputType": "Password",
+        "ParamFieldName": "DISCORD_CLIENT_SECRET",
+        "DefaultValue": "",
+        "EnumValues": {}
     }
 ]

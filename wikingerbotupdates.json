@@ -26,6 +26,16 @@
         "SkipOnFailure": false
     },
     {
+        "UpdateStageName": "Web-Oberflaeche herunterladen",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://github.com/Daywalker91/Wikingerbot/releases/download/webui/webui.zip",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": true,
+        "SkipOnFailure": true
+    },
+    {
         "UpdateStageName": "Python-Umgebung anlegen",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
