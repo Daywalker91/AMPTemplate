@@ -27,7 +27,9 @@
                     "PUBLIC_URL": "PUBLIC_URL",
                     "DISCORD_CLIENT_ID": "DISCORD_CLIENT_ID",
                     "DISCORD_CLIENT_SECRET": "DISCORD_CLIENT_SECRET",
-                    "TRUSTED_PROXIES": "TRUSTED_PROXIES"
+                    "TRUSTED_PROXIES": "TRUSTED_PROXIES",
+                    "COMMUNITY_DB_NAME": "COMMUNITY_DB_NAME",
+                    "COMMUNITY_SITE_URL": "COMMUNITY_SITE_URL"
                 }
             }
         ]
