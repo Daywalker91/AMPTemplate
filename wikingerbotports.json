@@ -2,8 +2,8 @@
     {
         "Protocol": "TCP",
         "Port": 8765,
-        "Ref": "ApplicationPort1",
-        "Name": "Web-Oberflaeche",
+        "Ref": "Port",
+        "Name": "Web-Oberfläche",
         "Description": "Port der Web-Oberflaeche des Bots (http)."
     }
 ]
